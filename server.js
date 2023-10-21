@@ -13,6 +13,8 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
+rollbar.log('A user wants to play a game')
+
 const playerRecord = {
   wins: 0,
   losses: 0,

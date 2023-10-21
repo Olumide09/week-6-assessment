@@ -87,7 +87,7 @@ app.post("/api/duel", (req, res) => {
       rollbar.info("You lost!")
     } else {
       //playerRecord.losses += 1;
-      playerRecord.wins +=1;
+      playerRecord.wins +=1; // I eventually found the bug😂
       res.status(200).send("You won!");
       rollbar.info("You Won! good job")
     }
